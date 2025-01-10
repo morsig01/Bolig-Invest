@@ -4,10 +4,11 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-center">
-        <Image src="/logo.png" width={500} height={500} alt="logo" />
+    <div className="bg-hero-pattern bg-cover bg-center">
+      <div className="flex justify-center pt-32">
+        <Image src="/logo black.png" width={500} height={500} alt="logo" />
       </div>
-      <div className="bg-gradient-to-b from-neutral-300 via-neutral-300 to-neutral-700 mx-40 -mt-40 pt-28 pb-36 rounded-t-lg">
+      <div className="bg-gradient-to-b from-neutral-100 via-neutral-400 to-neutral-700 mx-40 -mt-48 pt-36 pb-36 rounded-t-lg">
         <div className="flex justify-center items-center space-x-64">
           {/* circle 1 */}
           <div>
@@ -29,6 +30,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

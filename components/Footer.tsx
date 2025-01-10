@@ -4,8 +4,8 @@ import Link from "next/link";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-20">
           {/* Logo and About Section */}
           <div>
             <h3 className="text-lg font-bold">Bolig Invest</h3>

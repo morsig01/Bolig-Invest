@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Serif_Text, Inter } from "next/font/google";
+import { DM_Serif_Text, Geist_Mono, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const dmSerif = DM_Serif_Text({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: "400"
+  weight: "100"
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <body className={dmSerif.className}>
+        <body className={roboto.className}>
           <Navbar />
           {children}
           <Footer />

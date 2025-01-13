@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="flex justify-center pt-32">
         <Image src="/logo black.png" width={500} height={500} alt="logo" />
       </div>
-      <div className="bg-gradient-to-b from-neutral-100 via-neutral-400 to-neutral-700 mx-40 -mt-48 pt-36 pb-36 rounded-t-lg">
+      <div className="bg-gradient-to-b from-neutral-100 via-neutral-400 to-black mx-40 -mt-48 pt-36 pb-36 rounded-t-lg">
         <div className="flex justify-center items-center space-x-64">
           {/* circle 1 */}
           <div>

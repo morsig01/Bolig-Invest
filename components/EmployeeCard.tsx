@@ -12,12 +12,12 @@ export const EmployeeCard = ({ name, position, photoUrl }: EmployeeCardProps) =>
       <Image
         src={photoUrl}
         alt={name}
-        width={150}
-        height={150}
+        width={500}
+        height={500}
         className="rounded-full mx-auto"
       />
     )}
-    <h2 className="text-xl font-semibold mt-4 text-center">{name}</h2>
-    <p className="text-gray-600 text-center">{position}</p>
+    <div className="text-2xl font-bold mt-4 text-center text-black">{name}</div>
+    <div className="text-black text-center text-xl font-semibold">{position}</div>
   </div>
 );

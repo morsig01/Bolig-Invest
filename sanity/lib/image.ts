@@ -1,11 +1,13 @@
-import createImageUrlBuilder from '@sanity/image-url'
-import { SanityImageSource } from "@sanity/image-url/lib/types/types";
+// Querying with "sanityFetch" will keep content automatically updated
+// Before using it, import and render "<SanityLive />" in your layout, see
+// https://github.com/sanity-io/next-sanity#live-content-api for more information.
+import { defineLive } from "next-sanity";
+import { client } from './client'
 
-import { dataset, projectId } from '../env'
-
-// https://www.sanity.io/docs/image-url
-const builder = createImageUrlBuilder({ projectId, dataset })
-
-export const urlFor = (source: SanityImageSource) => {
-  return builder.image(source)
-}
+export const { sanityFetch, SanityLive } = defineLive({ 
+  client: client.withConfig({ 
+    // Live content is currently only available on the experimental API
+    // https://www.sanity.io/docs/api-versioning
+    apiVersion: 'vX' 
+  }) 
+});

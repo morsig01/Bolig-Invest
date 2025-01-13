@@ -1,4 +1,8 @@
-// sanity/schemas/schemaTypes/index.ts
-import { employee } from './employeeType';
+import { type SchemaTypeDefinition } from 'sanity'
 
-export const schemaTypes = [employee];
+import { employee } from './employeeType';
+import { project } from './projectType';
+
+export const schema: { types: SchemaTypeDefinition[] } = {
+  types: [employee, project],
+}

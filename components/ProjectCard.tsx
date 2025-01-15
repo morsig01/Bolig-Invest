@@ -1,3 +1,4 @@
+import member from '@/types/member';
 import Image from 'next/image';
 import React from 'react'
 
@@ -7,8 +8,7 @@ type ProjectCardProps = {
     startDate: string;
     endDate: string;
     imageUrl: string;
-    team: string;
-
+    team: member[];
 };
 
 export const ProjectCard = ({ title, description, imageUrl, team }: ProjectCardProps) => {
@@ -31,7 +31,7 @@ export const ProjectCard = ({ title, description, imageUrl, team }: ProjectCardP
           <div className="p-4 border-t">
             <h4 className="font-semibold text-gray-800 text-sm mb-2">Team:</h4>
             <div className="flex -space-x-2">
-              {team.map((member : any, index : any) => (
+              {team.map((member : member, index) => (
                 <div key={index} className="relative w-10 h-10">
                   {member.photoUrl ? (
                     <Image

@@ -1,5 +1,6 @@
 import { EmployeeCard } from '@/components/EmployeeCard';
 import { client } from '@/sanity/lib/client';
+import employee from '@/types/employee';
 
 
 async function getData() {
@@ -23,7 +24,7 @@ export default async function EmployeesPage() {
     <div className="container mx-auto p-4 py-40">
       <h1 className="text-3xl font-bold mb-6">Our Team</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {data.map((employee: any) => (
+        {data.map((employee: employee) => (
           <EmployeeCard
             key={employee._id}
             name={employee.name}

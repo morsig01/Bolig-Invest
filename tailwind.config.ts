@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       backgroundImage: {
-        'hero-pattern': "url('/meeting.jpeg')"
+        'hero-pattern': "url('/placeholder-600x400.webp')"
       }
     },
   },

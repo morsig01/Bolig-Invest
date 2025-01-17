@@ -7,7 +7,7 @@ async function getData() {
       _id,
       title,
       description,
-      "imageUrl": image.asset->url,
+      "image": image.asset->url,
       startDate,
       endDate,
       team[]->{
@@ -29,7 +29,7 @@ export default async function ProjectPage() {
 
   return (
     <div className="container mx-auto px-4 py-40">
-      <div className="text-3xl font-bold mb-6 text-center">Our Projects</div>
+      <div className="text-3xl font-bold mb-6 text-left">Our Projects</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {data.map((project :project) => (
           <ProjectCard

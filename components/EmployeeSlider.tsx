@@ -51,7 +51,7 @@ export const EmployeeSlider = () => {
   }
 
   return (
-    <div className="flex justify-center w-full">
+    <div className=" bg-black flex justify-center w-full">
       <div className="w-1/2 py-8">
         <Swiper
           navigation
